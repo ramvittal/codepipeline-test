@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id arn:aws:kms:us-west-2:716664005094:alias/aws/s3 --s3-bucket s3://rvvpoc
+      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id arn:aws:kms:us-west-2:716664005094:alias/aws/s3 --s3-bucket rvvpoc
                                    --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
